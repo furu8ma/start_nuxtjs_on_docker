@@ -1,0 +1,15 @@
+version: '3'
+services:
+  vue:
+    build: .
+    volumes:
+      - ./work:/root
+    ports:
+      - 3000:3000
+# After a project created, 
+# If you want node.js automatically,
+# - Update [project_name] to your project name.
+# - Uncomment blow 2 line.
+#
+#   working_dir: /root/[project_name]/
+#   command: yarn dev
